@@ -8,12 +8,5 @@ pipeline {
             }
         }
 
-
-        stage('Finished') {
-            steps {
-                echo 'building'
-            }
-        }
-
     }
 }
