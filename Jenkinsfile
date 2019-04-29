@@ -4,7 +4,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'npm install'
+                cmd_exec('npm install')
             }
         }
 
