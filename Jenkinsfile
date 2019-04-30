@@ -24,7 +24,7 @@ pipeline {
             }
         }
 
-        state ('Post Build') {
+        stage ('Post Build') {
             post {
                 always {
                     archiveArtifacts artifacts: 'build', onlyIfSuccessful: true
