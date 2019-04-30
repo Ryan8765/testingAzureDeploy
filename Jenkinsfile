@@ -24,5 +24,11 @@ pipeline {
             }
         }
 
+         post {
+            always {
+                archiveArtifacts artifacts: 'build', onlyIfSuccessful: true
+            }
+        }
+
     }
 }
