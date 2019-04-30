@@ -24,11 +24,14 @@ pipeline {
             }
         }
 
-         post {
-            always {
-                archiveArtifacts artifacts: 'build', onlyIfSuccessful: true
+        state ('Post Build') {
+            post {
+                always {
+                    archiveArtifacts artifacts: 'build', onlyIfSuccessful: true
+                }
             }
         }
+         
 
     }
 }
